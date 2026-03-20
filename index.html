@@ -653,4 +653,12 @@ function frame(ts) {
   travelers.forEach(t => { t.update(); t.draw(); });
 
   // nodes
-  nodes.for
+  nodes.forEach(n => n.draw());
+
+  requestAnimationFrame(frame);
+}
+
+requestAnimationFrame(frame);
+</script>
+</body>
+</html>
